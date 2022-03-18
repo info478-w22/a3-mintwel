@@ -13,14 +13,6 @@
 #   # choices = list of choices
 # )
 
-my_ui <-
-  navbarPage(
-    "COVID-19: Disease Modeling",
-    Introduction,
-    Deterministic_Model,
-    Stochastic_Model,
-    Interpretation
-)
 
 #home page
 Introduction <- 
@@ -126,7 +118,7 @@ Interpretation <- tabPanel(
     with various guidelines. One of the most important takeaways, in my opinion,
     is looking at how the chanes of transmission change so drastically with
     the implementation of social distancing. According to [one 
-    study] (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7976050/#:~:text=The%20maximum%20probability%20of%2063.2,in%20order%20to%20avoid%20infection.)
+    study](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7976050/#:~:text=The%20maximum%20probability%20of%2063.2,in%20order%20to%20avoid%20infection.)
     the transmission rate decreased from 63% to less than 1% when social
     distancing guidelines of 1.5 meters of separation. These guidelines are 
     modeled and the data shows how important they can be to helping maintain 
@@ -139,3 +131,11 @@ Interpretation <- tabPanel(
   )
 )
 
+my_ui <-
+  navbarPage(
+    "COVID-19: Disease Modeling",
+    Introduction,
+    Deterministic_Model,
+    Stochastic_Model,
+    Interpretation
+  )

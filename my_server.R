@@ -54,7 +54,7 @@ plot(mask_mod, y = "i.num", sim.lines = TRUE, mean.smooth = FALSE, qnts.smooth =
 
 #SERVER
 
-server <- function(input, output) {
+my_server <- function(input, output) {
   # graph 1
   output$graph_one <- renderPlotly({
     graph_one <- mod
@@ -70,7 +70,7 @@ server <- function(input, output) {
   # graph 3
   output$graph_three <- renderPlotly({
     graph_three <- st_mod
-    plot(graph_three, y = "i.num", sim.lines = TRUE, mean.smooth = FALSE, qnts.smooth = FALSE)
+    plot(st_mod, y = "i.num", sim.lines = TRUE, mean.smooth = FALSE, qnts.smooth = FALSE)
   })
   
   # graph 4
