@@ -9,6 +9,7 @@
 library(ggplot2)
 library(tidyr)
 library(dplyr)
+library(EpiModel)
 library(plotly)
 
 #deterministic model
